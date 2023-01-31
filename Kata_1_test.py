@@ -1,7 +1,11 @@
 import unittest
-import Kata_1
+import Kata_1 as k1
 
-class(unittest.TestCase):
-    def fizz_test(self):
-        t1 = fizzbuzz(9)
-        self.assertEqual(t1,"fizz")
+class Kata_1_test(unittest.TestCase):
+    
+    def test_fizz(self):
+        # t1 = k1.fizzbuzz(9)
+        self.assertEqual(k1.fizzbuzz(9),"fizz")
+
+if __name__ == "__main__":
+    unittest.main()
