@@ -1,7 +1,10 @@
+# Purpose: Takes a user input number and returns fizzbuzz based on its divisibility
+# Input: num - int - user input number
+# Return: fb - str - string based on number divisibility
 def fizzbuzz(num):
-    fb = ""             # str to be concatenated
+    fb = ""                # str to be concatenated
     
-    if num == 0:
+    if num == 0:           # If input 0 returns empty string
         return fb
     if not(num % 3):       # If divisible by 3 add "fizz"
         fb += "fizz"
