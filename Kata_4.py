@@ -31,7 +31,8 @@ def search(inp):
     result = []
     return(parse(inp, result))
 
-# inp = input("ASDFKAJSDFHASLFD: ")
-# while inp != "0":
-#     print(search(inp))
-#     inp = input("\nBRA bre bring bro: ")
+if __name__ == "__main__":
+    inp = input("Search: ")
+    while inp != '0':
+        print( search(inp) )
+        inp = input("Search: ")
